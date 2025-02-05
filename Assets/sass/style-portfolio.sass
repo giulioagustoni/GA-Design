@@ -1,0 +1,200 @@
+// Variabili
+$background-black: #000000
+$background-orange: #fd8a16
+$text-color-light: #d9d9d9
+$text-color-dark: #000000
+$font-family-courier: "Courier Prime", sans-serif
+$font-family-lexend: "Lexend", sans-serif
+$font-size-large: 64px
+$font-size-medium: 20px
+$font-size-small: 24px
+$font-weight-bold: 900
+$font-weight-regular: 400
+$box-shadow-light: 0px 0px 4px 0px rgba(255, 255, 255, 0.5)
+
+// Portfolio
+.portfolio
+  box-sizing: border-box
+  background: $background-black
+  height: 100vh
+  position: relative
+  overflow: hidden
+
+// Footer
+.footer
+  background: $background-orange
+  padding: 0 24px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-start
+  width: 100%
+  height: 113px
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  bottom: 0
+  overflow: hidden
+
+// Icons
+.icons
+  padding: 16px 0
+  display: flex
+  flex-direction: row
+  gap: 48px
+  align-items: center
+  justify-content: center
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+// Text elements
+.giulio-agustoni-2025,
+.nome,
+.cognome,
+.e-mail,
+.oggetto,
+.il-tuo-messaggio
+  color: $text-color-dark
+  text-align: left
+  font-family: $font-family-courier
+  font-size: $font-size-small
+  line-height: 150%
+  font-weight: $font-weight-regular
+  position: relative
+
+.copyright
+  text-align: center
+  font-size: $font-size-medium
+  font-weight: $font-weight-regular
+  align-self: stretch
+
+.frame-7
+  padding: 8px 16px
+  display: flex
+  flex-direction: row
+  gap: 10px
+  align-items: center
+  justify-content: center
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  top: 293px
+  box-shadow: $box-shadow-light
+
+.frase
+  color: $text-color-dark
+  text-align: left
+  font-family: $font-family-courier
+  font-size: $font-size-medium
+  line-height: 150%
+  font-weight: $font-weight-regular
+  position: relative
+  width: 327px
+
+.titolo
+  color: #ffffff
+  text-align: left
+  font-family: $font-family-lexend
+  font-size: $font-size-large
+  font-weight: $font-weight-bold
+  position: absolute
+  left: calc(50% - 217px)
+  top: 110px
+  width: 412px
+
+// Header
+.header
+  background: $background-black
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1)
+  position: fixed
+  width: 100%
+  z-index: 1
+
+.header ul
+  margin: 0
+  padding: 0
+  list-style: none
+  overflow: hidden
+  background-color: $background-black
+
+.header ul a
+  display: block
+  padding: 24px
+  color: $text-color-light
+  font-family: $font-family-courier
+
+.header ul a:hover
+  background-color: #111010
+
+.header .logo
+  float: left
+  padding: 24px
+
+.header .menu
+  clear: both
+  max-height: 0
+  transition: max-height 0.4s ease-out
+
+.header .menu-icon
+  padding: 50px 28px
+  position: relative
+  float: right
+  cursor: pointer
+
+.header .menu-icon .nav-icon
+  background-color: white
+  display: block
+  width: 32px
+  height: 4px
+  position: relative
+  transition: background-color 0.2s ease-out
+
+.header .menu-icon .nav-icon::before,
+.header .menu-icon .nav-icon::after
+  background-color: white
+  content: ""
+  display: block
+  height: 100%
+  width: 100%
+  transition: all 0.3s ease-out
+  position: absolute
+
+.header .menu-icon .nav-icon::before
+  top: 12px
+
+.header .menu-icon .nav-icon::after
+  top: -12px
+
+.header .menu-btn
+  display: none
+
+.header .menu-btn:checked ~ .menu
+  max-height: 240px
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon
+  background-color: transparent
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before
+  transform: rotate(-45deg)
+  top: 0
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after
+  transform: rotate(45deg)
+  top: 0
+
+// Media queries
+@media (min-width: 960px)
+  .header li
+    float: left
+
+  .header li a
+    padding: 20px 30px
+
+  .header .menu
+    clear: none
+    float: right
+    max-height: 50px
+
+  .header .menu-icon
+    display: none

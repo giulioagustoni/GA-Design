@@ -1,0 +1,236 @@
+$black: #000000
+$orange: #fd8a16
+$white: #ffffff
+$lightGray: #d9d9d9
+$font-primary: "Courier Prime", sans-serif
+$font-secondary: "Lexend", sans-serif
+$font-size-large: 24px
+$font-size-medium: 20px
+$font-size-heading: 64px
+$font-weight-normal: 400
+$font-weight-bold: 900
+
+.contact
+  box-sizing: border-box
+  background: $black
+  height: 1000px
+  position: relative
+  overflow: hidden
+
+.footer
+  background: $orange
+  padding: 0 24px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 113px
+  margin-top: auto
+
+.icons
+  padding: 16px 0
+  display: flex
+  flex-direction: row
+  gap: 48px
+  align-items: center
+  justify-content: center
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.giulio-agustoni-2025, 
+.nome, 
+.cognome, 
+.e-mail, 
+.oggetto, 
+.il-tuo-messaggio
+  color: $black
+  text-align: left
+  font-family: $font-primary
+  font-size: $font-size-large
+  line-height: 150%
+  font-weight: $font-weight-normal
+  position: relative
+
+.copyright
+  font-size: $font-size-medium
+  text-align: center
+
+.titolo
+  color: $white
+  text-align: left
+  font-family: $font-secondary
+  font-size: $font-size-heading
+  font-weight: $font-weight-bold
+  position: absolute
+  left: 63%
+  translate: -50%
+  top: 111px
+  width: 354px
+
+.form
+  padding: 16px 0 0 0
+  display: flex
+  flex-direction: row
+  gap: 10px
+  align-items: center
+  justify-content: flex-start
+  width: 382px
+  height: 740px
+  position: absolute
+  left: 50%
+  translate: -50%
+  top: 213px
+
+.form-mobile
+  padding: 0 24px
+  display: flex
+  flex-direction: column
+  gap: 16px
+  align-items: stretch
+  justify-content: space-between
+  flex: 1
+  height: 100%
+  position: relative
+
+.input-field, .input-field2
+  border-style: solid
+  border-color: $black
+  border-width: 1px
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+  overflow: hidden
+
+.input-field
+  height: 40px
+
+.input-field2
+  height: 133px
+
+.pulsante
+  background: $black
+  border-radius: 5px
+  padding: 8px 16px
+  display: flex
+  flex-direction: row
+  gap: 10px
+  align-items: center
+  justify-content: center
+  flex-shrink: 0
+  height: 48px
+  position: absolute
+  left: 24px
+  top: 580px
+
+.invia
+  color: $white
+  text-align: left
+  font-family: $font-primary
+  font-size: $font-size-large
+  line-height: 150%
+  font-weight: $font-weight-normal
+  position: relative
+
+.frame-1, .frame-2, .frame-3, .frame-4, .frame-5
+  display: flex
+  flex-direction: column
+  gap: 4px
+  align-items: stretch
+  flex-grow: 1
+  position: relative
+  margin-bottom: 16px
+
+.header
+  background: $black
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1)
+  position: fixed
+  width: 100%
+  z-index: 1
+
+.header ul
+  margin: 0
+  padding: 0
+  list-style: none
+  overflow: hidden
+  background-color: $black
+
+.header ul a
+  display: block
+  padding: 24px
+  color: $lightGray
+  font-family: $font-primary
+
+.header ul a:hover
+  background-color: #111010
+
+.header .logo
+  float: left
+  padding: 24px
+
+.header .menu
+  clear: both
+  max-height: 0
+  transition: max-height .4s ease-out
+
+.header .menu-icon
+  padding: 50px 28px
+  position: relative
+  float: right
+  cursor: pointer
+
+.header .menu-icon .nav-icon
+  background-color: white
+  display: block
+  width: 32px
+  height: 4px
+  position: relative
+  transition: background-color .2s ease-out
+
+.header .menu-icon .nav-icon::before, .header .menu-icon .nav-icon::after
+  background-color: white
+  content: ""
+  display: block
+  height: 100%
+  width: 100%
+  transition: all .3s ease-out
+  position: absolute
+
+.header .menu-icon .nav-icon::before
+  top: 12px
+
+.header .menu-icon .nav-icon::after
+  top: -12px
+
+.header .menu-btn
+  display: none
+
+.header .menu-btn:checked ~ .menu
+  max-height: 240px
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon
+  background-color: transparent
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before
+  transform: rotate(-45deg)
+  top: 0
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after
+  transform: rotate(45deg)
+  top: 0
+
+@media (min-width: 960px)
+  .header li
+    float: left
+
+  .header li a
+    padding: 20px 30px
+
+  .header .menu
+    clear: none
+    float: right
+    max-height: 50px
+
+  .header .menu-icon
+    display: none

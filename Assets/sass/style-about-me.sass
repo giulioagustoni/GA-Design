@@ -1,0 +1,369 @@
+// Variabili
+$black: #000000
+$white: #ffffff
+$orange: #fd8a16
+$font-primary: "Courier Prime", sans-serif
+$font-secondary: "Lexend", sans-serif
+
+$font-size-h1: 64px
+$font-size-body: 16px
+$font-size-h3: 24px
+$font-weight-h1: 900
+$font-weight-body: 400
+$font-weight-h3: 600
+
+// Stili generali
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+// Sezione About Me
+.about-me
+  background: $black
+  height: 3807px
+  position: relative
+  overflow: hidden
+
+// Design Vision
+.design-vision
+  color: $white
+  text-align: left
+  font-family: $font-secondary
+  font-size: $font-size-h1
+  font-weight: $font-weight-h1
+  position: absolute
+  left: calc(50% - 215px)
+  top: 379px
+  width: 354px
+
+// Paragrafi
+.paragraph, .paragraph2
+  padding: 10px
+  display: flex
+  flex-direction: row
+  gap: 10px
+  align-items: center
+  justify-content: center
+  width: 356px
+  position: absolute
+  left: 50%
+  translate: -50%
+
+.paragraph
+  top: 568px
+
+.paragraph2
+  top: 2053px
+
+.testo, .testo2
+  color: $white
+  text-align: left
+  font-family: $font-primary
+  font-size: $font-size-body
+  line-height: 150%
+  font-weight: $font-weight-body
+  position: relative
+  flex: 1
+
+// CV
+.cv
+  padding: 8px 16px
+  display: flex
+  flex-direction: column
+  gap: 36px
+  align-items: center
+  justify-content: flex-start
+  width: 356px
+  height: 1444px
+  position: absolute
+  left: 50%
+  translate: -50%
+  top: 2233px
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5)
+
+.frame-6, .frame-5
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.frame-6
+  gap: 40px
+
+.frame-5
+  gap: 36px
+
+.paragraph3
+  padding: 10px
+  display: flex
+  flex-direction: row
+  gap: 10px
+  align-items: center
+  justify-content: center
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.titolo
+  color: $black
+  text-align: center
+  font-family: $font-secondary
+  font-size: $font-size-h3
+  font-weight: $font-weight-h3
+  position: relative
+  flex: 1
+
+// Evidenziature
+.paragraph4
+  background: $black
+  padding: 0 2px
+  display: flex
+  flex-direction: row
+  gap: 0
+  align-items: center
+  justify-content: flex-start
+  flex-shrink: 0
+  position: relative
+
+.esperienze-formative, .esperienze-lavorative, .istruzione, .competenze-digitali
+  color: $white
+  text-align: left
+  font-family: $font-primary
+  font-size: $font-size-body
+  line-height: 150%
+  font-weight: 700
+  position: relative
+
+.frame-3
+  display: flex
+  flex-direction: column
+  gap: 16px
+  align-items: flex-start
+  justify-content: flex-start
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.paragraph5
+  padding: 0 10px
+  display: flex
+  flex-direction: column
+  gap: 0
+  align-items: center
+  justify-content: center
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.frame-1
+  display: flex
+  flex-direction: row
+  gap: 10px
+  align-items: center
+  justify-content: center
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.esperienze-formative1, .esperienze-lavorative1, .esperienze-lavorative2, .diploma
+  color: $black
+  text-align: left
+  font-family: $font-primary
+  font-size: $font-size-body
+  line-height: 150%
+  font-weight: 700
+  position: relative
+  flex: 1
+
+.frame-2
+  display: flex
+  flex-direction: column
+  gap: 8px
+  align-items: flex-start
+  justify-content: flex-start
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.descrizione-esp-formativa1, .lista-skills, .lista-skills-span, .lista-skills-span2
+  color: $black
+  text-align: left
+  font-family: $font-primary
+  font-size: $font-size-body
+  line-height: 150%
+  font-weight: $font-weight-body
+  position: relative
+  align-self: stretch
+
+.frame-4
+  display: flex
+  flex-direction: column
+  gap: 16px
+  align-items: flex-start
+  justify-content: flex-start
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.esperienza-formativa2
+  color: $black
+  text-align: left
+  font-family: $font-primary
+  font-size: $font-size-body
+  line-height: 150%
+  font-weight: 700
+  position: relative
+  flex: 1
+
+.descrizione-esp-formativa2
+  color: $black
+  text-align: left
+  font-family: $font-primary
+  font-size: $font-size-body
+  line-height: 150%
+  font-weight: $font-weight-body
+  position: relative
+  align-self: stretch
+
+// Immagini
+.immagine-hero, .immagine-hero-1
+  position: absolute
+  left: 50%
+  translate: -50%
+  object-fit: cover
+
+.immagine-hero
+  width: 402px
+  height: 481px
+  top: 1527px
+
+.immagine-hero-1
+  width: 402px
+  height: 236px
+  top: 120px
+
+// Footer
+.footer
+  background: $orange
+  padding: 0 24px
+  display: flex
+  flex-direction: column
+  gap: 0
+  align-items: center
+  justify-content: flex-start
+  width: 100%
+  height: 113px
+  position: absolute
+  left: 50%
+  translate: -50%
+  bottom: 0
+  overflow: hidden
+
+.icons
+  padding: 16px 0
+  display: flex
+  flex-direction: row
+  gap: 48px
+  align-items: center
+  justify-content: center
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.instagram, .email, .linkedin, .github
+  width: 48px
+  height: 48px
+  position: relative
+  overflow: visible
+
+.copyright
+  color: $black
+  text-align: center
+  font-family: $font-primary
+  font-size: 20px
+  line-height: 150%
+  font-weight: $font-weight-body
+  position: relative
+  align-self: stretch
+
+// Header
+.header
+  background: $black
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1)
+  position: fixed
+  width: 100%
+  z-index: 1
+
+.header ul
+  list-style: none
+  overflow: hidden
+  background-color: $black
+
+.header ul a
+  display: block
+  padding: 24px
+  color: #d9d9d9
+  font-family: $font-primary
+
+.header ul a:hover
+  background-color: #111010
+
+.header .logo
+  float: left
+  padding: 24px
+
+.header .menu
+  clear: both
+  max-height: 0
+  transition: max-height .4s ease-out
+
+.header .menu-icon
+  padding: 50px 28px
+  position: relative
+  float: right
+  cursor: pointer
+
+.header .menu-icon .nav-icon
+  background-color: white
+  display: block
+  width: 32px
+  height: 4px
+  position: relative
+  transition: background-color .2s ease-out
+
+.header .menu-icon .nav-icon::before, 
+.header .menu-icon .nav-icon::after
+  background-color: white
+  content: ""
+  display: block
+  height: 100%
+  width: 100%
+  transition: all .3s ease-out
+  position: absolute
+
+.header .menu-icon .nav-icon::before
+  top: 12px
+
+.header .menu-icon .nav-icon::after
+  top: -12px
+
+.header .menu-btn
+  display: none
+
+.header .menu-btn:checked ~ .menu
+  max-height: 240px
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon
+  background-color: transparent
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before
+  transform: rotate(-45deg)
+  top: 0
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after
+  transform: rotate(45deg)
+  top: 0
