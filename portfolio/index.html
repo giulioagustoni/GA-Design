@@ -4,28 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../Assets/css/style-portfolio.css">
+  <link rel="stylesheet" href="../dist/cssSS/style-portfolio.css">
   
-  <!-- font -->
+  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
- 
+
+  <title>GA Portfolio</title>
 
   <style>
-   a,
-   button,
-   input,
-   select,
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
    * {
        box-sizing: border-box;
        margin: 0;
@@ -33,9 +22,8 @@
        border: none;
        text-decoration: none;
        background: none;
-   
        -webkit-font-smoothing: antialiased;
-   }
+    }
    
    menu, ol, ul {
        list-style-type: none;
@@ -43,69 +31,68 @@
        padding: 0;
    }
    </style>
-
-  <title>GA Portfolio</title>
-  
 </head>
-
 
 <body>
 
+  <!-- HEADER -->
   <header class="header">
-
     <a href="../index.html" class="logo">
-      <img class="logo3" src="../Assets/img/logo.svg" alt="Logo" />
+      <img class="logo3" src="../Assets/img/logo.svg" alt="Logo GA Design" />
     </a>
+    
     <input class="menu-btn" id="menu-btn" type="checkbox">
     <label for="menu-btn" class="menu-icon">
       <span class="nav-icon"></span>
     </label>
-
-    <ul class="menu">
-      <li><a href="../about me/">about me</a></li>
-      <li><a href="../portfolio/">portfolio</a></li>
-      <li><a href="../contact/">contact</a></li>
+    
+    <!-- Menu di navigazione -->
+    <ul class="menu" aria-label="Menu di navigazione principale">
+      <li><a href="../about me/" aria-label="Vai alla pagina About Me">About Me</a></li>
+        <li><a href="index.html" aria-label="Vai alla pagina Portfolio">Portfolio</a></li>
+        <li><a href="../contact/" aria-label="Vai alla pagina Contatti">Contact</a></li>
     </ul>
-
   </header>
-  <div class="portfolio">
-   
-    <div class="titolo">
+
+  <!-- MAIN CONTENT -->
+  <main class="portfolio">
+    <section class="titolo">
       <h1>PORTFOLIO</h1>
-    </div>
+    </section>
 
-
-    <div
-      class="frame-7"
-      style="
-        background: url(../Assets/img/white-paper-texture.jpg) center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      "
-    >
+    <section class="frame-7"
+      style="background: url(../Assets/img/white-paper-texture.jpg) center;
+             background-size: cover;
+             background-repeat: no-repeat;">
       <div class="frase">
-        <p>work in progress...
-        <br />
-        <br />
+        <p>Work in progress...
+        <br /><br />
         Building dreams one pixel at a time!</p>
       </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="icons">
+      <a href="https://www.instagram.com/giulioagustoni" target="_blank" aria-label="Visita il profilo Instagram di Giulio Agustoni">
+        <img class="instagram" src="../Assets/img/Instagram.svg" alt="Icona Instagram" />
+      </a>
+      <a href="../contact/" class="link-container" aria-label="Invia un'email a Giulio Agustoni">
+        <img class="email" src="../Assets/img/Email.svg" alt="Icona Email"/>
+      </a>
+      <a href="https://www.linkedin.com/in/giulio-agustoni-157140234/" target="_blank" aria-label="Visita il profilo LinkedIn di Giulio Agustoni">
+        <img class="linkedin" src="../Assets/img/Linkedin.svg" alt="Icona LinkedIn"/>
+      </a>
+      <a href="https://github.com/giulioagustoni" target="_blank" aria-label="Visita il profilo GitHub di Giulio Agustoni">
+        <img class="github" src="../Assets/img/Github.svg" alt="Icona GitHub"/>
+      </a>
     </div>
+    <div class="copyright">© Giulio Agustoni 2025</div>
+  </footer>
 
-    <div class="footer">
-      <div class="icons">
-        <img class="instagram" src="../Assets/img//Instagram.svg" alt="Icona Instagram" />
-        <a href="../contact/" class="link-container">
-          <img class="email" src="../Assets/img/Email.svg" alt="Icona email"/>
-        </a>
-        <img class="linkedin" src="../Assets/img/Linkedin.svg" alt="Icona Linkedin"/>
-        <img class="github" src="../Assets/img/Github.svg" alt="Icona Github"/>
-      </div>
-      <div class="copyright">©giulio agustoni 2025</div>
-    </div>
-  
+  <!-- SCRIPT -->
+  <script src="../Assets/js/menu.js"></script>
 
-  </div>
-
- 
 </body>
 </html>

@@ -1,8 +1,8 @@
-// Aggiungi un listener per intercettare l'evento "submit" del form
+// Aggiunge un listener per intercettare l'evento "submit" del form
 document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault(); // Previeni il comportamento predefinito del form (es. ricarica della pagina)
   
-    // Raccogli i dati dal form
+    // Raccoglie i dati dal form
     const name = document.getElementById("name").value;
     const surname = document.getElementById("surname").value;
     const email = document.getElementById("email").value;

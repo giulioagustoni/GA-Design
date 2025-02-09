@@ -1,74 +1,86 @@
-// Variabili
-$background-black: #000000
-$background-orange: #fd8a16
-$text-color-light: #d9d9d9
-$text-color-dark: #000000
-$font-family-courier: "Courier Prime", sans-serif
-$font-family-lexend: "Lexend", sans-serif
-$font-size-large: 64px
-$font-size-medium: 20px
-$font-size-small: 24px
+// === COLORS & FONTS ===
+$primary-color: #fd8a16
+$secondary-color: #000000
+$text-color: #000
+$link-color: #d9d9d9
+$hover-color: #181818
+$font-family-base: "Courier Prime", sans-serif
+$font-family-heading: "Lexend", sans-serif
+$font-size-base: 24px
+$font-size-heading: 64px
+$font-weight-normal: 400
 $font-weight-bold: 900
-$font-weight-regular: 400
-$box-shadow-light: 0px 0px 4px 0px rgba(255, 255, 255, 0.5)
+$font-weight-semibold: 600
+$padding-base: 24px
+$padding-small: 16px
+$gap-medium: 48px
+$box-shadow-base: 0px 0px 4px 0px rgba(255, 255, 255, 0.5)
+$transition-speed: 0.3s
 
-// Portfolio
+// === PORTFOLIO SECTION ===
 .portfolio
   box-sizing: border-box
-  background: $background-black
+  background: $secondary-color
   height: 100vh
   position: relative
   overflow: hidden
 
-// Footer
+// === FOOTER SECTION ===
 .footer
-  background: $background-orange
-  padding: 0 24px
+  background: $primary-color
+  padding: 0 $padding-base
   display: flex
   flex-direction: column
+  gap: 0
   align-items: center
   justify-content: flex-start
   width: 100%
   height: 113px
   position: absolute
   left: 50%
-  transform: translateX(-50%)
+  translate: -50%
   bottom: 0
   overflow: hidden
 
-// Icons
+// === ICONS IN FOOTER ===
 .icons
-  padding: 16px 0
+  padding: $padding-small 0
   display: flex
   flex-direction: row
-  gap: 48px
+  gap: $gap-medium
   align-items: center
   justify-content: center
   align-self: stretch
   flex-shrink: 0
   position: relative
 
-// Text elements
-.giulio-agustoni-2025,
-.nome,
-.cognome,
-.e-mail,
-.oggetto,
+// === FORM INPUTS STYLES ===
+.giulio-agustoni-2025, 
+.nome, 
+.cognome, 
+.e-mail, 
+.oggetto, 
 .il-tuo-messaggio
-  color: $text-color-dark
+  color: $text-color
   text-align: left
-  font-family: $font-family-courier
-  font-size: $font-size-small
+  font-family: $font-family-base
+  font-size: $font-size-base
   line-height: 150%
-  font-weight: $font-weight-regular
+  font-weight: $font-weight-normal
   position: relative
 
+// === COPYRIGHT TEXT ===
 .copyright
+  color: $text-color
   text-align: center
-  font-size: $font-size-medium
-  font-weight: $font-weight-regular
+  font-family: $font-family-base
+  font-size: 20px
+  line-height: 150%
+  font-weight: $font-weight-normal
+  position: relative
   align-self: stretch
 
+// === FRAME STYLES ===
 .frame-7
   padding: 8px 16px
   display: flex
@@ -77,64 +89,70 @@ $box-shadow-light: 0px 0px 4px 0px rgba(255, 255, 255, 0.5)
   align-items: center
   justify-content: center
   position: absolute
+  top: 50%
   left: 50%
-  transform: translateX(-50%)
-  top: 293px
-  box-shadow: $box-shadow-light
+  transform: translate(-50%, -50%)
+  box-shadow: $box-shadow-base
 
+// === FRASE STYLES ===
 .frase
-  color: $text-color-dark
+  color: $text-color
   text-align: left
-  font-family: $font-family-courier
-  font-size: $font-size-medium
+  font-family: $font-family-base
+  font-size: 20px
   line-height: 150%
-  font-weight: $font-weight-regular
+  font-weight: $font-weight-normal
   position: relative
   width: 327px
 
-.titolo
+// === TITLE STYLES ===
+.titolo h1
   color: #ffffff
   text-align: left
-  font-family: $font-family-lexend
-  font-size: $font-size-large
-  font-weight: $font-weight-bold
+  font-family: $font-family-heading
+  font-size: $font-size-heading
+  font-weight: $font-weight-semibold
   position: absolute
   left: calc(50% - 217px)
   top: 110px
   width: 412px
 
-// Header
+// === HEADER STYLES ===
 .header
-  background: $background-black
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1)
+  background: $secondary-color
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1)
   position: fixed
   width: 100%
   z-index: 1
 
+// === HEADER LIST STYLES ===
 .header ul
   margin: 0
   padding: 0
   list-style: none
   overflow: hidden
-  background-color: $background-black
+  background-color: $secondary-color
 
 .header ul a
   display: block
-  padding: 24px
-  color: $text-color-light
-  font-family: $font-family-courier
+  padding: $padding-base
+  color: $link-color
+  font-family: $font-family-base
 
 .header ul a:hover
-  background-color: #111010
+  transform: scale(1.3)
+  transition: transform $transition-speed ease-in-out
+  color: $primary-color
 
+// === HEADER LOGO AND MENU ===
 .header .logo
   float: left
-  padding: 24px
+  padding: $padding-base $padding-base
 
 .header .menu
   clear: both
   max-height: 0
-  transition: max-height 0.4s ease-out
+  transition: max-height .4s ease-out
 
 .header .menu-icon
   padding: 50px 28px
@@ -142,13 +160,14 @@ $box-shadow-light: 0px 0px 4px 0px rgba(255, 255, 255, 0.5)
   float: right
   cursor: pointer
 
+// === NAVIGATION ICON STYLES ===
 .header .menu-icon .nav-icon
   background-color: white
   display: block
   width: 32px
   height: 4px
   position: relative
-  transition: background-color 0.2s ease-out
+  transition: background-color .2s ease-out
 
 .header .menu-icon .nav-icon::before,
 .header .menu-icon .nav-icon::after
@@ -157,7 +176,7 @@ $box-shadow-light: 0px 0px 4px 0px rgba(255, 255, 255, 0.5)
   display: block
   height: 100%
   width: 100%
-  transition: all 0.3s ease-out
+  transition: all .3s ease-out
   position: absolute
 
 .header .menu-icon .nav-icon::before
@@ -166,6 +185,7 @@ $box-shadow-light: 0px 0px 4px 0px rgba(255, 255, 255, 0.5)
 .header .menu-icon .nav-icon::after
   top: -12px
 
+// === MENU BUTTON ===
 .header .menu-btn
   display: none
 
@@ -183,8 +203,8 @@ $box-shadow-light: 0px 0px 4px 0px rgba(255, 255, 255, 0.5)
   transform: rotate(45deg)
   top: 0
 
-// Media queries
-@media (min-width: 960px)
+// === RESPONSIVE STYLES ===
+@media (min-width: 1140px)
   .header li
     float: left
 

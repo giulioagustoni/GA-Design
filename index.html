@@ -4,136 +4,126 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Assets/css/style.css">
+  <link rel="stylesheet" href="dist/cssSS/style.css">
 
-  <link rel="icon" href="Assets/img/logo.png" type="image/png" >
-  
+  <link rel="icon" href="Assets/img/logo.png" type="image/png">
+
+  <!-- back to top -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-
   <style>
-   a,
-   button,
-   input,
-   select,
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   * {
-       box-sizing: border-box;
-       margin: 0;
-       padding: 0;
-       border: none;
-       text-decoration: none;
-       background: none;
-   
-       -webkit-font-smoothing: antialiased;
-   }
-   
-   menu, ol, ul {
-       list-style-type: none;
-       margin: 0;
-       padding: 0;
-   }
 
-   </style>
+    a, button, input, select, h1, h2, h3, h4, h5, * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        background: none;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    menu, ol, ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+  </style>
 
   <title>GA Design</title>
 
 </head>
-
-
 <body>
 
-
+  <!-- HEADER -->
   <header class="header">
-
     <a href="index.html" class="logo">
       <img class="logo3" src="Assets/img/logo.svg" alt="Logo GA Design" />
     </a>
+    
     <input class="menu-btn" id="menu-btn" type="checkbox">
     <label for="menu-btn" class="menu-icon">
       <span class="nav-icon"></span>
     </label>
-        
-    <ul class="menu">
-      <li><a href="about me/">about me</a></li>
-      <li><a href="portfolio/">portfolio</a></li>
-      <li><a href="contact/">contact</a></li>
+    
+    <!-- Menu di navigazione -->
+    <ul class="menu" aria-label="Menu di navigazione principale">
+      <li><a href="about me/" aria-label="Vai alla pagina About Me">About Me</a></li>
+        <li><a href="portfolio/" aria-label="Vai alla pagina Portfolio">Portfolio</a></li>
+        <li><a href="contact/" aria-label="Vai alla pagina Contatti">Contact</a></li>
     </ul>
-
   </header>
- 
-  <div class="homepage">
-
-    <div class="titolo">
+  
+  <!-- CONTENUTO PRINCIPALE -->
+  <main class="homepage">
+    
+    <!-- Titolo principale -->
+    <section class="titolo">
       <h1>GIULIO AGUSTONI</h1>
-    
-    </div>
-    
-    <div class="immagini-container">
-      <div class="about-me" alt="Sezione About me">
+    </section>
+
+    <!-- Sezione immagini di navigazione -->
+    <section class="immagini-container">
+      <div class="about-me">
         <a href="about me">
-          <img class="rectangle-1" src="Assets/img/immagini homepage_about me.svg" />
-          
+          <img class="rectangle-1" src="Assets/img/immagini homepage_about me.svg" alt="Vai alla sezione About Me">
         </a>
       </div>
 
-
-      <div class="portfolio" alt="Sezione Portfolio">
+      <div class="portfolio">
         <a href="portfolio">
-          <img class="rectangle-1" src="Assets/img/immagini homepage_portfolio.svg" />
-          
+          <img class="rectangle-1" src="Assets/img/immagini homepage_portfolio.svg" alt="Vai alla sezione Portfolio">
         </a>
       </div>
 
-
-      <div class="contact" alt="Sezione Contact">
+      <div class="contact">
         <a href="contact/" class="link-container">
-          <img class="rectangle-1" src="Assets/img/immagine homepage_contact.svg" alt="Background" />
-          
+          <img class="rectangle-1" src="Assets/img/immagine homepage_contact.svg" alt="Vai alla sezione Contatti">
         </a>
       </div>
-    </div>
+    </section>
     
-    <div class="footer">
+    <!-- FOOTER -->
+    <footer class="footer">
       <div class="icons">
-
         <a href="https://www.instagram.com/giulioagustoni?igsh=cDNoOTR3bzZ4bHA=" class="link-container">
-          <img class="instagram" src="Assets/img/Instagram.svg" alt="Icona Instagram" />
+          <img class="instagram" src="Assets/img/Instagram.svg" alt="Visita il profilo Instagram di Giulio Agustoni">
         </a>
 
         <a href="contact/" class="link-container">
-          <img class="email" src="Assets/img/Email.svg" alt="Icona email"/>
+          <img class="email" src="Assets/img/Email.svg" alt="Invia una email a Giulio Agustoni">
         </a>
 
         <a href="https://www.linkedin.com/in/giulio-agustoni-157140234/" class="link-container">
-          <img class="linkedin" src="Assets/img/Linkedin.svg" alt="Icona Linkedin"/>
+          <img class="linkedin" src="Assets/img/Linkedin.svg" alt="Visita il profilo Linkedin di Giulio Agustoni">
         </a>
 
         <a href="https://github.com/giulioagustoni" class="link-container">
-          <img class="github" src="Assets/img/Github.svg" alt="Icona Github"/>
+          <img class="github" src="Assets/img/Github.svg" alt="Visita il profilo Github di Giulio Agustoni">
         </a>
-
       </div>
-      <div class="copyright">©giulio agustoni 2025</div>
-    </div>
+
+      <div class="copyright">© Giulio Agustoni 2025</div>
+    </footer>
+
+  </main>
+
+  <!-- Bottone "Torna su" -->
+  <button onclick="scrollToTop()" id="backToTop" class="btn btn-dark" aria-label="Torna all'inizio della pagina">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="Assets/js/backtotop.js"></script>
 
 
+  <script src="Assets/js/menu.js"></script>
 
-
-  </div>
-  
-  
 
 </body>
 </html>
