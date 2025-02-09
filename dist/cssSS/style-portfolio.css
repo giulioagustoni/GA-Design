@@ -210,4 +210,9 @@
   .header .menu-icon {
     display: none;
   }
+}
+@media screen and (max-width: 1140px) {
+  body {
+    min-width: 385px;
+  }
 }/*# sourceMappingURL=style-portfolio.css.map */
