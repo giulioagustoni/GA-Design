@@ -224,11 +224,6 @@ body {
     aspect-ratio: 1.7777777778;
   }
 }
-@media screen and (max-width: 1140px) {
-  body {
-    min-width: 385px;
-  }
-}
 #backToTop {
   position: fixed;
   bottom: 20px;
