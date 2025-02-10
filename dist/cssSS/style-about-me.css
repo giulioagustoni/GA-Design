@@ -1,9 +1,3 @@
-* {
-  outline: 1px solid red;
-  max-width: 100vw;
-  box-sizing: border-box;
-}
-
 img, video, iframe {
   max-width: 100%;
   height: auto;
@@ -50,7 +44,7 @@ body {
   font-size: 64px;
   font-weight: 900;
   position: relative;
-  left: calc(60% - 579px);
+  left: calc(65% - 579px);
   top: 850px;
   width: 354px;
 }
