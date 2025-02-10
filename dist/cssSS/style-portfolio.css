@@ -106,7 +106,7 @@ body {
   font-size: var(--h1-font-size, 64px);
   font-weight: var(--h1-font-weight, 900);
   position: absolute;
-  left: calc(55% - 217px);
+  left: calc(60% - 217px);
   top: 110px;
   width: 412px;
 }
