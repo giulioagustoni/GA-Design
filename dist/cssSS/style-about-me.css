@@ -9,6 +9,8 @@ body {
   height: 100%;
   overflow-x: hidden;
   touch-action: pan-y;
+  margin: 0;
+  padding: 0;
 }
 
 .about-me {
@@ -17,6 +19,8 @@ body {
   height: 3800px;
   position: relative;
   overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .immagine-hero-1 {
