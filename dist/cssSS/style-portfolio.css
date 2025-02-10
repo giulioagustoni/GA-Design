@@ -99,12 +99,12 @@ body {
   width: 327px;
 }
 
-.titolo h1 {
+.titolo h1{
   color: #ffffff;
   text-align: left;
-  font-family: "Lexend", sans-serif;
-  font-size: 64px;
-  font-weight: 600;
+  font-family: var(--h1-font-family, "Lexend", sans-serif);
+  font-size: var(--h1-font-size, 64px);
+  font-weight: var(--h1-font-weight, 900);
   position: absolute;
   left: calc(50% - 217px);
   top: 110px;
