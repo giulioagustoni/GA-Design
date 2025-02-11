@@ -1,3 +1,22 @@
+a,
+button,
+input,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  background: none;
+  -webkit-font-smoothing: antialiased;
+}
+
 .about-me {
   box-sizing: border-box;
   background: #000000;
@@ -6,7 +25,6 @@
   overflow: hidden;
 }
 
-
 .immagine-hero-1 {
   width: 1440px;
   height: 846px;
@@ -14,22 +32,21 @@
   left: 52%;
   translate: -50%;
   margin-top: 32px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
 
 .design-vision h1 {
   color: #ffffff;
   text-align: left;
-  font-family: var(--h1-font-family, "Lexend", sans-serif);
-  font-size: var(--h1-font-size, 64px);
-  font-weight: var(--h1-font-weight, 900);
+  font-family: "Lexend", sans-serif;
+  font-size: 64px;
+  font-weight: 900;
   position: relative;
   left: calc(60% - 579px);
   top: 850px;
   width: 354px;
 }
-
 
 .paragraph {
   display: flex;
@@ -37,37 +54,22 @@
   gap: 10px;
   align-items: center;
   justify-content: center;
-  
   width: 700px;
-  max-width: 90%; /* Per adattarlo a schermi piccoli */
-  
+  max-width: 90%;
   position: relative;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-
-.testo  {
+.testo, .testo2 {
   color: #ffffff;
   text-align: left;
-  font-family: var(--body-font-family, "Courier Prime", sans-serif);
-  font-size: var(--body-font-size, 16px);
-  line-height: var(--body-line-height, 150%);
-  font-weight: var(--body-font-weight, 400);
-  
+  font-family: "Courier Prime", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
 }
-
-.testo2  {
-  color: #ffffff;
-  text-align: left;
-  font-family: var(--body-font-family, "Courier Prime", sans-serif);
-  font-size: var(--body-font-size, 16px);
-  line-height: var(--body-line-height, 150%);
-  font-weight: var(--body-font-weight, 400);  
-
-}
-
 
 .immagine-hero {
   width: 571px;
@@ -76,8 +78,10 @@
   left: calc(50% - 579px);
   top: 1649px;
   overflow: hidden;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .paragraph2 {
   padding: 10px;
   display: flex;
@@ -89,10 +93,8 @@
   position: absolute;
   left: 75%;
   translate: -50%;
-  top:50%;
+  top: 50%;
 }
-
-
 
 .cv {
   padding: 8px 16px 8px 16px;
@@ -536,9 +538,6 @@
   }
 }
 @media screen and (max-width: 1140px) {
-  body {
-    min-width: 385px;
-  }
   .about-me {
     box-sizing: border-box;
     background: #000000;
@@ -553,7 +552,7 @@
     font-size: var(--h1-font-size, 64px);
     font-weight: var(--h1-font-weight, 900);
     position: absolute;
-    left: calc(50% - 215px);
+    left: calc(60% - 215px);
     top: 379px;
     width: 354px;
   }
@@ -564,7 +563,8 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
-    width: 356px;
+    max-width: 365px;
+    width: 100%;
     position: absolute;
     left: 50%;
     translate: -50%;
@@ -577,7 +577,8 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
-    width: 356px;
+    max-width: 365px;
+    width: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
