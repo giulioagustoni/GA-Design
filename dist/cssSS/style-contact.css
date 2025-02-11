@@ -1,0 +1,319 @@
+a,
+button,
+input,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  background: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.html, .body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  touch-action: pan-y;
+}
+
+.contact {
+  box-sizing: border-box;
+  background: #000000;
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer {
+  background: #fd8a16;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 113px;
+  margin-top: auto;
+}
+
+.icons {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.giulio-agustoni-2025,
+.nome,
+.cognome,
+.e-mail,
+.oggetto,
+.il-tuo-messaggio {
+  color: #000;
+  text-align: left;
+  font-family: "Courier Prime", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  position: relative;
+}
+
+.copyright {
+  color: #000;
+  text-align: center;
+  font-family: "Courier Prime", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+
+.titolo h1 {
+  color: #fff;
+  text-align: left;
+  font-family: "Lexend", sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  position: absolute;
+  left: 63%;
+  transform: translateX(-50%);
+  top: 111px;
+  width: 354px;
+}
+
+.form {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 560px;
+  height: 740px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 213px;
+}
+
+.form-mobile {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+  justify-content: space-between;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.input-field,
+.input-field2 {
+  border: 1px solid #000;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.input-field {
+  height: 40px;
+}
+
+.input-field2 {
+  height: 200px;
+}
+
+.pulsante .btn.invia {
+  background-color: #000;
+  color: #d9d9d9;
+  font-family: "Courier Prime", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+
+.pulsante .btn.invia:hover {
+  background-color: #fd8a16;
+  color: #000;
+}
+
+.frame-1,
+.frame-2,
+.frame-3,
+.frame-4,
+.frame-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: stretch;
+  flex-grow: 1;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.header {
+  background: #000000;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.header ul a {
+  display: block;
+  padding: 24px;
+  color: #d9d9d9;
+  font-family: "Courier Prime", sans-serif;
+  text-decoration: none;
+}
+
+.header ul a:hover {
+  transform: scale(1.3);
+  transition: transform 0.3s ease-in-out;
+  color: #fd8a16;
+}
+
+.header .logo {
+  float: left;
+  padding: 24px 24px;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+}
+
+.header .menu-icon {
+  padding: 50px 28px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  background-color: white;
+  display: block;
+  width: 32px;
+  height: 4px;
+  position: relative;
+  transition: background-color 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon::before,
+.header .menu-icon .nav-icon::after {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-out;
+  position: absolute;
+}
+
+.header .menu-icon .nav-icon::before {
+  top: 12px;
+}
+
+.header .menu-icon .nav-icon::after {
+  top: -12px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background-color: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 1140px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: 50px;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form {
+    width: 380px;
+  }
+}
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #fd8a16;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#backToTop:hover {
+  background-color: #181818;
+}/*# sourceMappingURL=style-contact.css.map */
