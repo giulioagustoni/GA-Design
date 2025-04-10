@@ -1,0 +1,326 @@
+// === COLORS & FONTS ===
+$primary-color: #fd8a16
+$secondary-color: #000000
+$text-color: #000
+$link-color: #d9d9d9
+$hover-color: #181818
+$font-family-base: "Courier Prime", sans-serif
+$font-family-heading: "Lexend", sans-serif
+$font-size-base: 24px
+$font-size-heading: 64px
+$font-weight-normal: 400
+$font-weight-bold: 900
+$font-weight-semibold: 600
+$box-shadow-base: 1px 1px 4px 0 rgba(0, 0, 0, .1)
+$transition-speed: 0.3s
+$padding-base: 24px
+$padding-small: 16px
+$gap-medium: 48px
+
+
+
+a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * 
+      box-sizing: border-box
+      margin: 0
+      padding: 0
+      border: none
+      text-decoration: none
+      background: none
+  
+      -webkit-font-smoothing: antialiased
+   
+   
+menu, ol, ul 
+  list-style-type: none
+  margin: 0
+  padding: 0
+  
+
+.html, .body 
+  max-width: 100%
+  overflow-x: hidden
+
+body 
+  position: relative
+  width: 100%
+  height: 100%
+  overflow-x: hidden
+  touch-action: pan-y 
+
+
+
+// === CONTACT SECTION ===
+.contact
+  box-sizing: border-box
+  background: $secondary-color
+  height: 1000px
+  position: relative
+  overflow: hidden
+
+// === FOOTER SECTION ===
+.footer
+  background: $primary-color
+  padding: 0 $padding-base
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 113px
+  margin-top: auto
+
+// === ICONS IN FOOTER ===
+.icons
+  padding: $padding-small 0
+  display: flex
+  flex-direction: row
+  gap: $gap-medium
+  align-items: center
+  justify-content: center
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+// === FORM INPUTS STYLES ===
+.giulio-agustoni-2025,
+.nome,
+.cognome,
+.e-mail,
+.oggetto,
+.il-tuo-messaggio
+  color: $text-color
+  text-align: left
+  font-family: $font-family-base
+  font-size: $font-size-base
+  line-height: 1.5
+  font-weight: $font-weight-normal
+  position: relative
+
+// === COPYRIGHT TEXT ===
+.copyright
+  color: $text-color
+  text-align: center
+  font-family: $font-family-base
+  font-size: 20px
+  line-height: 1.5
+  font-weight: $font-weight-normal
+  position: relative
+  align-self: stretch
+
+// === TITLE STYLES ===
+.titolo h1
+  color: #fff
+  text-align: left
+  font-family: $font-family-heading
+  font-size: $font-size-heading
+  font-weight: $font-weight-bold
+  position: absolute
+  left: 63%
+  transform: translateX(-50%)
+  top: 111px
+  width: 354px
+
+// === FORM STYLES ===
+.form
+  padding-top: 16px
+  display: flex
+  flex-direction: row
+  gap: 10px
+  align-items: center
+  justify-content: flex-start
+  width: 560px
+  height: 740px
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  top: 213px
+
+// === MOBILE FORM STYLES ===
+.form-mobile
+  padding: 0 $padding-base
+  display: flex
+  flex-direction: column
+  gap: 16px
+  align-items: stretch
+  justify-content: space-between
+  flex: 1
+  height: 100%
+  width: 100%
+  position: relative
+
+// === INPUT FIELD STYLES ===
+.input-field,
+.input-field2
+  border: 1px solid $text-color
+  align-self: stretch
+  flex-shrink: 0
+  width: 100%
+  position: relative
+  overflow: hidden
+
+.input-field
+  height: 40px
+
+.input-field2
+  height: 200px
+
+// === BUTTON STYLES ===
+.pulsante .btn.invia
+  background-color: $text-color
+  color: $link-color
+  font-family: $font-family-base
+  font-size: $font-size-base
+  line-height: 1.5
+  font-weight: $font-weight-normal
+  transition: $transition-speed ease-in-out
+
+.pulsante .btn.invia:hover
+  background-color: $primary-color
+  color: $text-color
+
+// === FRAME STYLES ===
+.frame-1,
+.frame-2,
+.frame-3,
+.frame-4,
+.frame-5
+  display: flex
+  flex-direction: column
+  gap: 4px
+  align-items: stretch
+  flex-grow: 1
+  position: relative
+  margin-bottom: 16px
+
+// === HEADER STYLES ===
+.header
+  background: $secondary-color
+  box-shadow: $box-shadow-base
+  position: fixed
+  width: 100%
+  z-index: 1
+
+// === HEADER LIST STYLES ===
+.header ul
+  margin: 0
+  padding: 0
+  list-style: none
+  overflow: hidden
+  background-color: $secondary-color
+
+.header ul a
+  display: block
+  padding: $padding-base
+  color: $link-color
+  font-family: $font-family-base
+  text-decoration: none
+
+.header ul a:hover
+  transform: scale(1.3)
+  transition: transform $transition-speed ease-in-out
+  color: $primary-color
+
+// === HEADER LOGO AND MENU ===
+.header .logo
+  float: left
+  padding: $padding-base $padding-base
+
+.header .menu
+  clear: both
+  max-height: 0
+  transition: max-height .4s ease-out
+
+.header .menu-icon
+  padding: 50px 28px
+  position: relative
+  float: right
+  cursor: pointer
+
+// === NAVIGATION ICON STYLES ===
+.header .menu-icon .nav-icon
+  background-color: white
+  display: block
+  width: 32px
+  height: 4px
+  position: relative
+  transition: background-color .2s ease-out
+
+.header .menu-icon .nav-icon::before,
+.header .menu-icon .nav-icon::after
+  background-color: white
+  content: ""
+  display: block
+  height: 100%
+  width: 100%
+  transition: all .3s ease-out
+  position: absolute
+
+.header .menu-icon .nav-icon::before
+  top: 12px
+
+.header .menu-icon .nav-icon::after
+  top: -12px
+
+// === MENU BUTTON ===
+.header .menu-btn
+  display: none
+
+.header .menu-btn:checked ~ .menu
+  max-height: 240px
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon
+  background-color: transparent
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before
+  transform: rotate(-45deg)
+  top: 0
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after
+  transform: rotate(45deg)
+  top: 0
+
+// === RESPONSIVE STYLES ===
+@media (min-width: 1140px)
+  .header li
+    float: left
+
+  .header li a
+    padding: 20px 30px
+
+  .header .menu
+    clear: none
+    float: right
+    max-height: 50px
+
+  .header .menu-icon
+    display: none
+
+@media screen and (max-width: 768px)
+  .form
+    width: 380px
+
+  
+// === BACK TO TOP BUTTON ===
+#backToTop
+  position: fixed
+  bottom: 20px
+  right: 20px
+  display: none
+  background-color: $primary-color
+  color: white
+  border: 2px solid white
+  padding: 10px 15px
+  border-radius: 5px
+  cursor: pointer
+
+#backToTop:hover
+  background-color: $hover-color

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="GA Design - Il mio portfolio di UX/UI design con progetti e contatti per collaborazioni. Scopri il mio lavoro!">
+  <meta name="robots" content="index, follow">
+  
+  <link rel="stylesheet" href="Assets/css/style.css">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="GA Design - Homepage" />
+  <meta property="og:description" content="Scopri i miei progetti di UX/UI Design e il mio percorso professionale!" />
+  <meta property="og:image" content="https://giulioagustoni.github.io/GA-Design/Assets/img/logo-GA.png" />
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://giulioagustoni.github.io/GA-Design/" />
+  <meta property="og:type" content="website" />
+
+
+  <link rel="icon" href="Assets/img/logo.png" type="image/png">
+
+  <!-- back to top -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <title>GA Design</title>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img class="logo3" src="Assets/img/logo.svg" alt="Logo GA Design" />
+    </a>
+    
+    <input class="menu-btn" id="menu-btn" type="checkbox">
+    <label for="menu-btn" class="menu-icon">
+      <span class="nav-icon"></span>
+    </label>
+    
+    <!-- Menu di navigazione -->
+    <ul class="menu" aria-label="Menu di navigazione principale">
+      <li><a href="about me/" aria-label="Vai alla pagina About Me">About Me</a></li>
+        <li><a href="portfolio/" aria-label="Vai alla pagina Portfolio">Portfolio</a></li>
+        <li><a href="contact/" aria-label="Vai alla pagina Contatti">Contact</a></li>
+    </ul>
+  </header>
+  
+  <!-- CONTENUTO PRINCIPALE -->
+  <main class="homepage">
+    
+    <!-- Titolo principale -->
+    <section class="titolo">
+      <h1>GIULIO AGUSTONI</h1>
+    </section>
+
+    <!-- Sezione immagini di navigazione -->
+    <section class="immagini-container">
+      <div class="about-me">
+        <a href="about me">
+          <img class="rectangle-1" src="Assets/img/immagini homepage_about me.svg" alt="Vai alla sezione About Me">
+        </a>
+      </div>
+
+      <div class="portfolio">
+        <a href="portfolio">
+          <img class="rectangle-1" src="Assets/img/immagini homepage_portfolio.svg" alt="Vai alla sezione Portfolio">
+        </a>
+      </div>
+
+      <div class="contact">
+        <a href="contact/" class="link-container">
+          <img class="rectangle-1" src="Assets/img/immagine homepage_contact.svg" alt="Vai alla sezione Contatti">
+        </a>
+      </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="icons">
+        <a href="https://www.instagram.com/giulioagustoni?igsh=cDNoOTR3bzZ4bHA=" class="link-container">
+          <img class="instagram" src="Assets/img/Instagram.svg" alt="Visita il profilo Instagram di Giulio Agustoni">
+        </a>
+
+        <a href="contact/" class="link-container">
+          <img class="email" src="Assets/img/Email.svg" alt="Invia una email a Giulio Agustoni">
+        </a>
+
+        <a href="https://www.linkedin.com/in/giulio-agustoni-157140234/" class="link-container">
+          <img class="linkedin" src="Assets/img/Linkedin.svg" alt="Visita il profilo Linkedin di Giulio Agustoni">
+        </a>
+
+        <a href="https://github.com/giulioagustoni" class="link-container">
+          <img class="github" src="Assets/img/Github.svg" alt="Visita il profilo Github di Giulio Agustoni">
+        </a>
+      </div>
+
+      <div class="copyright">© Giulio Agustoni 2025</div>
+    </footer>
+
+  </main>
+
+  <!-- Bottone "Torna su" -->
+  <button onclick="scrollToTop()" id="backToTop" class="btn btn-dark" aria-label="Torna all'inizio della pagina">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="Assets/js/backtotop.js"></script>
+
+
+  <script src="Assets/js/menu.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Contattami per collaborazioni e richieste. Compila il form e risponderò il prima possibile.">
+  <meta name="robots" content="index, follow">
+  
+  <link rel="stylesheet" href="../Assets/css/style-contact.css">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="GA Design - Contact">
+  <meta property="og:description" content="Vuoi collaborare con me? Compila il form di contatto e sarò felice di risponderti!">
+  <meta property="og:image" content="https://giulioagustoni.github.io/GA-Design/Assets/img/logo-GA.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://giulioagustoni.github.io/GA-Design/contact/">
+  <meta property="og:type" content="website">
+
+
+  
+  <!-- Bootstrap per pulsanti -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <link rel="icon" href="../Assets/img/logo.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <title>GA Contact</title>  
+
+</head>
+
+
+<body>
+
+
+  
+   <!-- HEADER -->
+   <header class="header">
+    <a href="../index.html" class="logo">
+      <img class="logo3" src="../Assets/img/logo.svg" alt="Logo GA Design" />
+    </a>
+    
+    <input class="menu-btn" id="menu-btn" type="checkbox">
+    <label for="menu-btn" class="menu-icon">
+      <span class="nav-icon"></span>
+    </label>
+    
+    <!-- Menu di navigazione -->
+    <ul class="menu" aria-label="Menu di navigazione principale">
+      <li><a href="../about me/" aria-label="Vai alla pagina About Me">About Me</a></li>
+        <li><a href="../portfolio/" aria-label="Vai alla pagina Portfolio">Portfolio</a></li>
+        <li><a href="index.html" aria-label="Vai alla pagina Contatti">Contact</a></li>
+    </ul>
+  </header>
+
+  <div class="contact">
+    <div class="titolo">
+      <h1>CONTACT</h1>
+    </div>
+  </div>
+    
+    
+    <div
+      class="form"
+      style="
+        background: url(../Assets/img/design-space-paper-textured-background.jpg) center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    >
+
+
+      <div class="form-mobile">
+        
+        <form id="contact-form">
+
+          <div class="frame-1">
+            <label for="name" class="nome">Name</label>
+            <input type="text" id="name" name="name" class="input-field" placeholder="Enter your name" required />
+          </div>
+
+          <div class="frame-2">
+            <label for="surname" class="cognome">Surname</label>
+            <input type="text" id="surname" name="surname" class="input-field" placeholder="Enter your surname" required />
+          </div>
+
+          <div class="frame-3">
+            <label for="email" class="e-mail">E-mail</label>
+            <input type="email" id="email" name="email" class="input-field" placeholder="Enter your email" required />
+          </div>
+
+          <div class="frame-4">
+            <label for="object" class="oggetto">Object</label>
+            <input type="text" id="object" name="object" class="input-field" placeholder="Enter the subject" required />
+          </div>
+
+          <div class="frame-5">
+            <label for="message" class="il-tuo-messaggio">Your message</label>
+            <textarea id="message" name="message" class="input-field2" placeholder="Write your message here" required></textarea>
+          </div>
+
+          <div class="pulsante">
+            <button type="submit" class="btn invia" aria-label="Invia il modulo">SUBMIT</button>
+          </div>
+        </form>
+      </div> 
+    </div>
+    
+  
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="icons">
+        <a href="https://www.instagram.com/giulioagustoni" target="_blank" aria-label="Visita il profilo Instagram di Giulio Agustoni">
+          <img class="instagram" src="../Assets/img/Instagram.svg" alt="Icona Instagram" />
+        </a>
+        <a href="index.html" class="link-container" aria-label="Invia un'email a Giulio Agustoni">
+          <img class="email" src="../Assets/img/Email.svg" alt="Icona Email"/>
+        </a>
+        <a href="https://www.linkedin.com/in/giulio-agustoni-157140234/" target="_blank" aria-label="Visita il profilo LinkedIn di Giulio Agustoni">
+          <img class="linkedin" src="../Assets/img/Linkedin.svg" alt="Icona LinkedIn"/>
+        </a>
+        <a href="https://github.com/giulioagustoni" target="_blank" aria-label="Visita il profilo GitHub di Giulio Agustoni">
+          <img class="github" src="../Assets/img/Github.svg" alt="Icona GitHub"/>
+        </a>
+      </div>
+      <div class="copyright">© Giulio Agustoni 2025</div>
+    </footer>
+
+  
+  <!-- EMAIL JS -->
+  <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script>
+    (function(){
+        emailjs.init({
+          publicKey: "2yVjDbuBV_jkkgV1b",
+        });
+    })();
+  </script>
+
+  <!-- SCRIPTS -->
+  <script src="../Assets/js/form.js"></script>
+  <script src="../Assets/js/menu.js"></script>
+  <script src="../Assets/js/backtotop.js"></script>
+
+  <!-- Pulsante Scroll to Top -->
+  <button onclick="scrollToTop()" id="backToTop" class="btn btn-dark" aria-label="Torna all'inizio della pagina">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+
+</body>
+</html>

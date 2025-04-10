@@ -1,0 +1,708 @@
+// ** Variabili **
+$h1-font-family: "Lexend", sans-serif
+$h1-font-size: 64px
+$h1-font-weight: 900
+$body-font-family: "Courier Prime", sans-serif
+$body-font-size: 16px
+$body-line-height: 150%
+$body-font-weight: 400
+$h3-font-family: "Lexend", sans-serif
+$h3-font-size: 24px
+$h3-font-weight: 600
+$footer-background: #fd8a16
+$header-background: #000000
+$header-hover-color: #fd8a16
+$logo-padding: 24px
+$header-padding: 24px
+$nav-icon-color: white
+$header-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1)
+$header-menu-height: 240px
+$header-menu-transition: .4s ease-out
+$header-icon-width: 32px
+$header-icon-height: 4px
+$header-nav-width: 100%
+
+
+
+a,
+button,
+input,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+* 
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  border: none
+  text-decoration: none
+  background: none
+
+  -webkit-font-smoothing: antialiased
+
+
+
+// ** Sezione About Me **
+.about-me
+  box-sizing: border-box
+  background: #000000
+  height: 3800px
+  position: relative
+  overflow: hidden
+
+// ** Immagini Hero **
+.immagine-hero-1
+  width: 1440px
+  height: 846px
+  position: absolute
+  left: 52%
+  translate: -50%
+  margin-top: 32px
+  object-fit: cover
+
+// ** Titoli Design Vision **
+.design-vision h1
+  color: #ffffff
+  text-align: left
+  font-family: $h1-font-family
+  font-size: $h1-font-size
+  font-weight: $h1-font-weight
+  position: relative
+  left: calc(60% - 579px)
+  top: 850px
+  width: 354px
+
+// ** Paragrafi **
+.paragraph
+  display: flex
+  flex-direction: row
+  gap: 10px
+  align-items: center
+  justify-content: center
+  width: 700px
+  max-width: 90%
+  position: relative
+  top: 30%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.testo, .testo2
+  color: #ffffff
+  text-align: left
+  font-family: $body-font-family
+  font-size: $body-font-size
+  line-height: $body-line-height
+  font-weight: $body-font-weight
+
+// ** Immagine Hero 2 **
+.immagine-hero
+  width: 571px
+  height: 641px
+  position: absolute
+  left: calc(50% - 579px)
+  top: 1649px
+  overflow: hidden
+  object-fit: cover
+
+// ** Paragrafi 2 **
+.paragraph2
+  padding: 10px
+  display: flex
+  flex-direction: row
+  gap: 10px
+  align-items: center
+  justify-content: center
+  width: 356px
+  position: absolute
+  left: 75%
+  translate: -50%
+  top: 50%
+
+// ** CV Section **
+.cv
+  padding: 8px 16px 8px 16px
+  display: flex
+  flex-direction: column
+  gap: 36px
+  align-items: center
+  justify-content: flex-start
+  width: 757px
+  height: 1261px
+  position: absolute
+  left: 50%
+  translate: -50%
+  top: 2406px
+  box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.5)
+
+// ** Frame and Flexbox Layouts **
+.frame-6, .frame-5
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.frame-6
+  gap: 40px
+
+.frame-5
+  gap: 36px
+
+.paragraph3
+  padding: 10px
+  display: flex
+  flex-direction: row
+  gap: 10px
+  align-items: center
+  justify-content: center
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+// ** Titolo H1 Section **
+.titolo h1
+  color: #000000
+  text-align: center
+  font-family: $h3-font-family
+  font-size: $h3-font-size
+  font-weight: $h3-font-weight
+  position: relative
+  flex: 1
+
+// ** Paragrafo 4 **
+.paragraph4
+  background: #000000
+  padding: 0px 2px 0px 2px
+  display: flex
+  flex-direction: row
+  gap: 0px
+  align-items: center
+  justify-content: flex-start
+  flex-shrink: 0
+  position: relative
+
+// ** Esperienze Formative e Lavorative **
+.esperienze-formative h3, .esperienze-lavorative h3, .istruzione h3, .competenze-digitali h3
+  color: #ffffff
+  text-align: left
+  font-family: $body-font-family
+  font-size: $body-font-size
+  line-height: $body-line-height
+  font-weight: 700
+  position: relative
+
+.frame-3, .frame-2
+  display: flex
+  flex-direction: column
+  gap: 16px
+  align-items: flex-start
+  justify-content: flex-start
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.paragraph5
+  padding: 0px 10px 0px 10px
+  display: flex
+  flex-direction: column
+  gap: 0px
+  align-items: center
+  justify-content: center
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.esperienze-formative1, .esperienze-lavorative1, .esperienze-lavorative2, .diploma
+  color: #000000
+  text-align: left
+  font-family: $body-font-family
+  font-size: $body-font-size
+  line-height: $body-line-height
+  font-weight: 700
+  position: relative
+  flex: 1
+
+// ** Footer Section **
+.footer
+  background: $footer-background
+  padding: 0px 24px 0px 24px
+  display: flex
+  flex-direction: column
+  gap: 0px
+  align-items: center
+  justify-content: flex-start
+  width: 100%
+  height: 113px
+  position: absolute
+  left: 50%
+  translate: -50%
+  bottom: 0px
+  overflow: hidden
+
+.icons
+  padding: 16px 0px 16px 0px
+  display: flex
+  flex-direction: row
+  gap: 48px
+  align-items: center
+  justify-content: center
+  align-self: stretch
+  flex-shrink: 0
+  position: relative
+
+.instagram, .email, .linkedin, .github
+  flex-shrink: 0
+  width: 48px
+  height: 48px
+  position: relative
+  overflow: visible
+
+.copyright
+  color: #000000
+  text-align: center
+  font-family: $body-font-family
+  font-size: 20px
+  line-height: $body-line-height
+  font-weight: $body-font-weight
+  position: relative
+  align-self: stretch
+
+// ** Header Section **
+.header
+  background: $header-background
+  box-shadow: $header-shadow
+  position: fixed
+  width: 100%
+  z-index: 1
+
+.header ul
+  margin: 0
+  padding: 0
+  list-style: none
+  overflow: hidden
+  background-color: $header-background
+
+.header ul a
+  display: block
+  padding: $header-padding
+  color: #d9d9d9
+  font-family: $body-font-family
+
+.header ul a:hover
+  transform: scale(1.3)
+  transition: transform 0.3s ease-in-out
+  color: $header-hover-color
+
+.header .logo
+  float: left
+  padding: $logo-padding
+
+.header .menu
+  clear: both
+  max-height: 0
+  transition: max-height $header-menu-transition
+
+.header .menu-icon
+  padding: 50px 28px
+  position: relative
+  float: right
+  cursor: pointer
+
+.header .menu-icon .nav-icon
+  background-color: $nav-icon-color
+  display: block
+  width: $header-icon-width
+  height: $header-icon-height
+  position: relative
+  transition: background-color .2s ease-out
+
+.header .menu-icon .nav-icon::before, .header .menu-icon .nav-icon::after
+  background-color: $nav-icon-color
+  content: ""
+  display: block
+  height: 100%
+  width: 100%
+  transition: all .3s ease-out
+  position: absolute
+
+.header .menu-icon .nav-icon::before
+  top: 12px
+
+.header .menu-icon .nav-icon::after
+  top: -12px
+
+.header .menu-btn
+  display: none
+
+.header .menu-btn:checked ~ .menu
+  max-height: $header-menu-height
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon
+  background-color: transparent
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before
+  transform: rotate(-45deg)
+  top: 0
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after
+  transform: rotate(45deg)
+  top: 0
+
+@media (min-width: 1140px)
+  .header li
+    float: left
+
+  .header li a
+    padding: 20px 30px
+
+  .header .menu
+    clear: none
+    float: right
+    max-height: 50px
+
+  .header .menu-icon
+    display: none
+
+@media screen and (max-width: 1140px)
+  
+  .about-me
+    box-sizing: border-box
+    background: #000000
+    height: 3807px
+    position: relative
+    overflow: hidden
+  
+  .design-vision h1
+    color: #ffffff
+    text-align: left
+    font-family: var(--h1-font-family, "Lexend", sans-serif)
+    font-size: var(--h1-font-size, 64px)
+    font-weight: var(--h1-font-weight, 900)
+    position: absolute
+    left: calc(60% - 215px)
+    top: 379px
+    width: 354px
+  
+  .paragraph2
+    padding: 10px
+    display: flex
+    flex-direction: column
+    gap: 10px
+    align-items: center
+    justify-content: center
+    max-width: 365px 
+    width: 100% 
+    position: absolute
+    left: 50%
+    translate: -50%
+    top: 2053px
+  
+  .paragraph
+    padding: 10px
+    display: flex
+    flex-direction: column
+    gap: 10px
+    align-items: center
+    justify-content: center
+    max-width: 365px 
+    width: 100% 
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 568px
+
+  .testo,
+  .testo2
+    color: #ffffff
+    text-align: left
+    font-family: var(--body-font-family, "Courier Prime", sans-serif)
+    font-size: var(--body-font-size, 16px)
+    line-height: var(--body-line-height, 150%)
+    font-weight: var(--body-font-weight, 400)
+    position: relative
+    flex: 1
+  
+  .cv
+    padding: 8px 16px
+    display: flex
+    flex-direction: column
+    gap: 36px
+    align-items: center
+    justify-content: flex-start
+    width: 356px
+    height: 1444px
+    position: absolute
+    left: 50%
+    translate: -50%
+    top: 2233px
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.5)
+  
+  .frame-6,
+  .frame-5
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    align-self: stretch
+    flex-shrink: 0
+    position: relative
+  
+  .frame-6
+    gap: 40px
+  
+  .frame-5
+    gap: 36px
+  
+  .paragraph3
+    padding: 10px
+    display: flex
+    flex-direction: row
+    gap: 10px
+    align-items: center
+    justify-content: center
+    align-self: stretch
+    flex-shrink: 0
+    position: relative
+  
+  .titolo h1
+    color: #000000
+    text-align: center
+    font-family: var(--h3-font-family, "Lexend", sans-serif)
+    font-size: var(--h3-font-size, 24px)
+    font-weight: var(--h3-font-weight, 600)
+    position: relative
+    flex: 1
+
+  .paragraph4
+    background: #000000
+    padding: 0px 2px 0px 2px
+    display: flex
+    flex-direction: row
+    gap: 0px
+    align-items: center
+    justify-content: flex-start
+    flex-shrink: 0
+    position: relative
+
+  .esperienze-formative,
+  .esperienze-lavorative,
+  .istruzione,
+  .competenze-digitali
+    color: #ffffff
+    text-align: left
+    font-family: "Courier Prime", sans-serif
+    font-size: 16px
+    line-height: 150%
+    font-weight: 700
+    position: relative
+
+  .frame-3
+    display: flex
+    flex-direction: column
+    gap: 16px
+    align-items: flex-start
+    justify-content: flex-start
+    align-self: stretch
+    flex-shrink: 0
+    position: relative
+
+  .paragraph5
+    padding: 0px 10px 0px 10px
+    display: flex
+    flex-direction: column
+    gap: 0px
+    align-items: center
+    justify-content: center
+    align-self: stretch
+    flex-shrink: 0
+    position: relative
+
+  .frame-1
+    display: flex
+    flex-direction: row
+    gap: 10px
+    align-items: center
+    justify-content: center
+    align-self: stretch
+    flex-shrink: 0
+    position: relative
+
+  .esperienze-formative1,
+  .esperienze-lavorative1,
+  .esperienze-lavorative2,
+  .diploma
+    color: #000000
+    text-align: left
+    font-family: "Courier Prime", sans-serif
+    font-size: 16px
+    line-height: 150%
+    font-weight: 700
+    position: relative
+    flex: 1
+
+  .frame-2
+    display: flex
+    flex-direction: column
+    gap: 8px
+    align-items: flex-start
+    justify-content: flex-start
+    align-self: stretch
+    flex-shrink: 0
+    position: relative
+
+  .descrizione-esp-formativa1
+    color: #000000
+    text-align: left
+    font-family: var(--body-font-family, "Courier Prime", sans-serif)
+    font-size: var(--body-font-size, 16px)
+    line-height: var(--body-line-height, 150%)
+    font-weight: var(--body-font-weight, 400)
+    position: relative
+    align-self: stretch
+
+  .lista-skills
+    color: #000000
+    text-align: left
+    font-family: var(--body-font-family, "Courier Prime", sans-serif)
+    font-size: var(--body-font-size, 16px)
+    line-height: var(--body-line-height, 150%)
+    font-weight: var(--body-font-weight, 400)
+    position: relative
+    align-self: stretch
+
+  .lista-skills-span
+    color: #000000
+    font-family: var(--body-font-family, "Courier Prime", sans-serif)
+    font-size: var(--body-font-size, 16px)
+    line-height: var(--body-line-height, 150%)
+    font-weight: var(--body-font-weight, 400)
+
+  .lista-skills-span2
+    color: #000000
+    list-style-type: disc
+    padding-left: 1em
+    font-family: var(--body-font-family, "Courier Prime", sans-serif)
+    font-size: var(--body-font-size, 16px)
+    line-height: var(--body-line-height, 150%)
+    font-weight: var(--body-font-weight, 400)
+
+  .frame-4
+    display: flex
+    flex-direction: column
+    gap: 16px
+    align-items: flex-start
+    justify-content: flex-start
+    align-self: stretch
+    flex-shrink: 0
+    position: relative
+
+  .esperienza-formativa2
+    color: #000000
+    text-align: left
+    font-family: "Courier Prime", sans-serif
+    font-size: 16px
+    line-height: 150%
+    font-weight: 700
+    position: relative
+    flex: 1
+
+  .descrizione-esp-formativa2
+    color: #000000
+    text-align: left
+    font-family: var(--body-font-family, "Courier Prime", sans-serif)
+    font-size: var(--body-font-size, 16px)
+    line-height: var(--body-line-height, 150%)
+    font-weight: var(--body-font-weight, 400)
+    position: relative
+    align-self: stretch
+
+  .group-1
+    flex-shrink: 0
+    width: 288px
+    height: 144px
+    position: static
+
+  .paragraph6
+    padding: 0px 10px 0px 10px
+    display: flex
+    flex-direction: column
+    gap: 0px
+    align-items: center
+    justify-content: center
+    width: 128.75px
+    position: absolute
+    left: calc(50% - 144px)
+    top: 1278px
+
+  .competenze-digitali1
+    color: #000000
+    text-align: left
+    font-family: var(--body-font-family, "Courier Prime", sans-serif)
+    font-size: var(--body-font-size, 16px)
+    line-height: var(--body-line-height, 150%)
+    font-weight: var(--body-font-weight, 400)
+    position: relative
+    width: 144px
+
+  .paragraph7
+    padding: 0px 10px 0px 10px
+    display: flex
+    flex-direction: column
+    gap: 0px
+    align-items: center
+    justify-content: center
+    width: 128.75px
+    position: absolute
+    left: 75%
+    translate: -50%
+    top: 1278px
+
+  .competenze-digitali2
+    color: #000000
+    text-align: left
+    font-family: var(--body-font-family, "Courier Prime", sans-serif)
+    font-size: var(--body-font-size, 16px)
+    line-height: var(--body-line-height, 150%)
+    font-weight: var(--body-font-weight, 400)
+    position: relative
+    width: 144px
+
+  .immagine-hero
+    width: 402px
+    height: 481px
+    position: absolute
+    left: 50%
+    translate: -50%
+    top: 1527px
+    overflow: hidden
+    object-fit: cover
+
+  .immagine-hero-1
+    width: 402px
+    height: auto
+    position: absolute
+    left: 50%
+    translate: -50%
+    margin-top: 104px
+    object-fit: cover
+
+#backToTop
+  position: fixed
+  bottom: 20px
+  right: 20px
+  display: none
+  background-color: #fd8a16
+  color: white
+  border: none
+  padding: 10px 15px
+  border: solid 2px white
+  border-radius: 5px
+  cursor: pointer
+
+#backToTop:hover
+  background-color: #181818
